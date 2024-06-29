@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>Trip to Ignalia NPP</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head></title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head>
+
+<body id="Body_of_doc">
+    <div>
+        <h2>
+            We have a proposed trip to Ignalia NPP.
+        </h2>
+        <p id="Test">
+            If this trip is operational we will complete it in the summer break.
+        </p>
+        <script>
+            window.onload = heights()
+            height=0
+            width=0
+            function heights(){
+            const elmnt = document.getElementById("Body_of_doc");
+            let height = elmnt.offsetHeight;
+            let width = elmnt.offsetWidth;
+            console.log(height)
+            console.log(width)
+
+            //declare var names and place into local storage.
+            title_str=document.title.replace(/\s/g, '');
+            localStorage.setItem((title_str+"height"), height)
+            //window.alert(localStorage.getItem("TriptoIgnaliaNPPheight"))
+            localStorage.setItem((title_str+"width"), width)
+            //window.alert(localStorage.getItem("TriptoIgnaliaNPPwidth"))
+            
+            }
+            </script>
+    </div>
+</body>

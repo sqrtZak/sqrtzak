@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>Zak</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+      <script type="text/javascript" src="External_JS.js"></script>
+  </head>
+    <header>
+        <h1><span class="notbold">Site of Mathematical and Computational Projects</h1>
+        
+
+          <p class="author">
+            Zak <br />
+          </p>
+            <p class = "author">
+              College<br />
+              Department of Computer Science<br />
+            </p>
+
+            <p class="author" id="date_full"></p>
+            <script>window.onload=str_date_fin()</script>
+
+          <div style="margin-bottom: 5%;"></div>
+
+          <div class="abstract">
+            <h2>Abstract</h2>
+            <p>
+              I am a former student at College and a prospective student at University of Manchester, hoping to study Computer Science and Mathematics. I have recently finished A-Levels in Computer Science, Further Mathematics, Mathematics, Physics. I am currently using my site to show some summer projects.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 5%;"></div>
+
+          <h3>Hyperlinked Contents</h3>
+          <p class="toc"><ul id="home_page_list" class="first_order_list">
+            <li><a href="Trip_to_Ignalia_NPP.html"><span style="color: rgb(0, 0, 0);">$\Gamma$</span></a></li>
+            <ul class="second_order_list">
+              <li> <a href="Trip_to_Ignalia_NPP.html"><span style="color: rgb(0, 0, 0);">$\alpha$</span></a></li>
+              <li><a href="Trip_to_Ignalia_NPP.html"><span style="color: rgb(0, 0, 0);">$\beta$</span></a></li>
+            </ul>
+            <li> <a href="Trip_to_Ignalia_NPP.html"><span style="color: rgb(0, 0, 0);">Trip to Ignalia NPP</span></a></li>
+            <li><a href="Trip_to_Ignalia_NPP.html"><span style="color: rgb(0, 0, 0);">A-Level Study Advice</span></a></li>
+          </ul></p>
+      </header>
+  </body>
+</html>
