@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>Trip to Ignalia NPP</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head></title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head>
+
+<body id="Body_of_doc">
+    <div>
+        <h2>
+            Aviva Fintech Hackathon
+        </h2>
+        <p id="Test">
+            In march 2024, I partook in a Hackathon at Aviva in Norwich.
+        </p>
+        <p id="Test"></p>
+            During this I improved several skills:
+    </p><p class="toc"><ul id="home_page_list" class="first_order_list">
+                <li>
+                    Teamwork and communicating within a team
+                </li>
+                <li>
+                    Idea development
+                </li>
+                <li>
+                    Presentation skills
+                </li>
+                <li>
+                    Time management
+                </li>
+            </ul>
+        </p>
+        <p>
+            We developed an idea that help with information overload and financial illiteracy within younger people. Our proposed solution, Finance Buddy, used AI to recognize patterns within demographics. We used these to redirect them to approved educational resources to learn about a specified area of finance.
+        </p><p>
+I thoroughly enjoyed this project especially networking with some people at Aviva and other top financial organizations.
+        </p><p>
+During this project the board of judges awarded me a prize for my presentation skills.
+
+        </p>
+        <script>
+            window.onload = heights()
+            height=0
+            width=0
+            function heights(){
+            const elmnt = document.getElementById("Body_of_doc");
+            let height = elmnt.offsetHeight;
+            let width = elmnt.offsetWidth;
+            console.log(height)
+            console.log(width)
+
+            //declare var names and place into local storage.
+            title_str=document.title.replace(/\s/g, '');
+            localStorage.setItem((title_str+"height"), height)
+            //window.alert(localStorage.getItem("TriptoIgnaliaNPPheight"))
+            localStorage.setItem((title_str+"width"), width)
+            //window.alert(localStorage.getItem("TriptoIgnaliaNPPwidth"))
+            
+            }
+            </script>
+    </div>
+</body>

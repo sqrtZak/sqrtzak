@@ -1,28 +1,9 @@
 /*!
- * LaTeX.css (https://latex.now.sh/)
+ * LaTeX.css (https://latex.vercel.app/)
  *
  * Source: https://github.com/vincentdoerig/latex-css
  * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
 */
-
-/*
-Note:
-Current CSS may not be the most up-to-date from github repository, this a stable version which works alongside my modifications.
-*/
-
-a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
-
 
 @font-face {
   font-family: 'Latin Modern';
@@ -135,7 +116,7 @@ a:active {
   --text-indent-size: 1.463rem; /* In 12pt [Latin Modern font] LaTeX article
   \parindent =~ 17.625pt; taking also into account the ratio
   1pt[LaTeX] = (72 / 72.27) * 1pt[HTML], with default 12pt/1rem LaTeX.css font
-  size, the identation value in rem CSS units is: 
+  size, the identation value in rem CSS units is:
   \parindent =~ 17.625 * (72 / 72.27) / 12 = 1.463rem. */
 }
 
@@ -430,11 +411,6 @@ table.borders-custom {
 .col-12-l tr > :nth-child(12) {
   text-align: left;
 }
-
-.notbold{
-  font-weight:normal
-}
-
 .col-1-c tr > :nth-child(1),
 .col-2-c tr > :nth-child(2),
 .col-3-c tr > :nth-child(3),
@@ -464,10 +440,25 @@ table.borders-custom {
   text-align: right;
 }
 
+/* Format figure captions (based on table captions) */
+figure {
+  counter-increment: figcaption;
+}
+figcaption {
+  text-align: left;
+  font-size: 0.923em;
+  padding: 0.25em 0.25em 0;
+  width: 100%;
+  margin-left: 0;
+}
+figcaption::before {
+  content: 'Figure ' counter(figcaption) '. ';
+  font-weight: bold;
+}
+
 /* Center align the title */
 h1:first-child {
   text-align: center;
-  font-size: 25px;
 }
 
 /* Nested ordered list for ToC */
@@ -478,7 +469,7 @@ nav ol {
 nav li {
   display: block;
 }
-nav li:before {
+nav li::before {
   content: counters(item, '.') ' ';
   counter-increment: item;
   padding-right: 0.85rem;
@@ -526,7 +517,7 @@ dl dd {
   content: 'Proof. ' attr(title);
   font-style: italic;
 }
-.proof:after {
+.proof::after {
   content: '◾️';
   filter: var(--proof-symbol-filter);
   position: absolute;
@@ -545,60 +536,13 @@ dl dd {
   content: 'Definition ' counter(definition) '. ';
   font-weight: bold;
   font-style: normal;
-
 }
-.first_order_list{
-li::marker{
-  font-size: 1rem;
-}
-}
-
-/*Defining custom symbols to be used for bullets*/
-
-@counter-style dash_list{ 
-    system: cyclic;
-    symbols: —;
-    suffix:" ";
-
-}
-
-@counter-style star_list{ 
-  system: cyclic;
-  symbols: ∗; /*Replace with U+2217, OR other via stackoverflow.com/questions/34899402*/
-  suffix:" ";
-
-}
-
-.second_order_list{
-  list-style: dash_list;
-  li::marker{
-    font-size: 1rem;
-
-  }
-}
-
-li{
-  
-  align-items: center;
-
-}
-
-.third_order_list{
-  list-style: star_list;
-  li::marker{
-
-    font-size: 1.5em;
-    font-family: "Computer Modern";
-  }
-}
-
 
 /* Center align author name, use small caps and add vertical spacing  */
 .author {
   margin: 0.85rem 0;
-  /*font-variant-caps: small-caps;*/
+  font-variant-caps: small-caps;
   text-align: center;
-  line-height: 1.5rem;
 }
 
 /* Sidenotes */
@@ -740,11 +684,9 @@ input.sidenote-toggle {
 
 /* Heading typography */
 h1 {
-  font-size: 19.2px;
-  font-family: "Computer Modern";
+  font-size: 2.5rem;
   line-height: 3.25rem;
-  font-weight: 200;
-  /* margin-bottom: 1.625rem;*/
+  margin-bottom: 1.625rem;
 }
 
 h2 {
