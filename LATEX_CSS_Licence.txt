@@ -3,7 +3,7 @@ This site is copyrighted by Zak Powles under a CC BY-NC-ND licence.
 This website incorporates styling detailed below. 
 
 Website developed using latex style CSS + HTML, from https://latex.vercel.app/
-As requried its licence follows:
+As required its licence follows:
 
 MIT License
 
