@@ -1,1 +1,92 @@
-#code here 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>Aviva Fintech Hackathon</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head></title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head>
+
+<body id="Body_of_doc">
+    <div>
+        <h2>
+            StudentHack 2025 - University of Manchester
+        </h2>
+        <p id="Test">
+            In April 2025, I partook in a Hackathon in Manchester.
+            This hackathon was organised by the UniCs society.
+        </p>
+      
+      
+        <p id="Test"></p>
+I enjoyed working collaboratively with the team. We succeeded in winning the prize from Ping Proxies, using webscraping APIs to process bulk data in an efficient time frame. We also developed an application that help users stay fit and healthy by using an AI API to Google's Gemini. We successfully integrated accessibility features like audio input (Native Gemini feature) and text-to-speech using Neuphonics API. The basis of this app was in python running a UI comprised of Qt.    
+        <p>
+            I also enjoyed the networking of the event, meeting with portswigger and  developer lecturers from Google and the CEO of Ping Proxies
+        </p><p>
+        I would like to thank my team for the valiant effort and winning us a prize!
+        </p>
+            <label for="sn-anything" class="sidenote-toggle">⊕</label>
+    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+    <span class="sidenote">© Zak Powles, CC BY-NC-ND <a href="LATEX_CSS_Licence.txt">Licence</a></span>
+        <script>
+            window.onload = heights()
+            height=0
+            width=0
+            function heights(){
+            const elmnt = document.getElementById("Body_of_doc");
+            let height = elmnt.offsetHeight;
+            let width = elmnt.offsetWidth;
+            console.log(height)
+            console.log(width)
+
+            //declare var names and place into local storage.
+            title_str=document.title.replace(/\s/g, '');
+            localStorage.setItem((title_str+"height"), height)
+            localStorage.setItem((title_str+"width"), width)
+            
+            }
+            </script>
+    </div>
+</body>
