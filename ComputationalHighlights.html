@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>Computational Highlights</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head></title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head>
+      <!--
+        Title
+      -->
+<body id="Body_of_doc">
+    <div>
+        <h2 style="text-align: center;">
+            Computational Highlights
+        </h2>
+        <p id="Test">
+            In this section, I will present the computational projects I have worked on.
+        </p>
+       <!--
+        Body
+      -->
+
+<style> 
+    .box {
+/* Add space inside the box */
+      padding-right: 1%;
+      display:inline-grid;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      text-align: center;
+      width: 25%;
+      margin: 2px;
+    }
+    .spacer {
+      padding: 0px;
+      display:inline-grid;
+      text-align: center;   
+      width: 5%;
+      margin-left: 0px;
+      
+    }
+    .cleanlink{
+      color: #000000;
+      text-decoration:none;
+      font-size:small;;
+    }
+
+</style>
+
+<h3>Hyperlinked Contents</h3>
+          <p class="toc"><ul id="home_page_list" class="first_order_list">
+            <li><a class="cleanlink"href="#MinecraftServer"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Minecraft Server</span></a></li>
+            <li><a class="cleanlink"href="#NASStorage"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Self-Hosted Network Attached Storage</span></a></li>
+          </ul>
+          </p>
+
+
+<h3>Minecraft Server</h3>      
+<p id="MinecraftServer"></p>
+<p>
+  I created a self-hosted Minecraft server running in a Docker container on a 16GB Raspberry Pi 5, using Raspberry Pi OS Lite. I selected this hardware for its low idle power consumption, high uptime, and excellent performance. The server runs Geyser-MC, enabling cross-compatibility between Java and Bedrock clients. To secure the server, I implemented Cloudflare for DDoS protection and DNS management, along with TCP-Shield and PlayIt.gg tunneling. This setup provides strong security without exposing ports (19131 UDP and 25565 TCP).
+  <br><br>Through this project, I applied and developed skills in:
+  <br>Networking: UFW, iptables, tunneling, DNS configuration.
+  <br>Security principles: Port exposure mitigation, DDoS protection.
+  <br>Server management: Docker containerization, log monitoring, systemd services.
+</p>
+
+
+<h3>Self-Hosted Network Attached Storage</h3>      
+        <p id="NASStorage"></p>
+<p>
+  I built a Network Attached Storage (NAS) system on a Raspberry Pi 5, controlled via API calls secured with Cloudflare Zero Trust, including multi-factor authentication and DDoS protection. The system runs incremental backup software to efficiently manage data and ensure redundancy.
+  <br>I developed a Python-based UI using Qt to control the NAS, providing an interface for client devices.
+  <br><br>Through this project, I applied skills in:
+  <br>Security & Networking: API security, Cloudflare Zero Trust, multi-factor authentication, DDoS mitigation.
+  <br>System Management: Incremental backups, storage management.
+  <br>Software Development <i>(front-end)</i>: Python, Qt.
+</p>
+
+
+      <!--
+        Footnotes
+      -->
+            <label for="sn-anything" class="sidenote-toggle">⊕</label>
+    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+    <span class="sidenote">© Zak Powles, CC BY-NC-ND <a href="LATEX_CSS_Licence.txt">Licence</a></span>
+        <script>
+            window.onload = heights()
+            height=0
+            width=0
+            function heights(){
+            const elmnt = document.getElementById("Body_of_doc");
+            let height = elmnt.offsetHeight;
+            let width = elmnt.offsetWidth;
+            console.log(height)
+            console.log(width)
+
+            //declare var names and place into local storage.
+            title_str=document.title.replace(/\s/g, '');
+            localStorage.setItem((title_str+"height"), height)
+            localStorage.setItem((title_str+"width"), width)
+            
+            }
+            </script>
+    </div>
+</body>
