@@ -26,7 +26,6 @@
       });
       </script>    
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
-  </head></title>
 
       <!--
         Linking latex css style sheet.
@@ -48,9 +47,6 @@
       </script>    
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
   </head>
-      <!--
-        Title
-      -->
 <body id="Body_of_doc">
     <div>
         <h2 style="text-align: center;">
@@ -63,82 +59,175 @@
         Body
       -->
 
-<style> 
-    .box {
-/* Add space inside the box */
-      padding-right: 1%;
-      display:inline-grid;
-      background-color: #ffffff;
-      border: 1px solid #000000;
-      text-align: center;
-      width: 25%;
-      margin: 2px;
-    }
-    .spacer {
-      padding: 0px;
-      display:inline-grid;
-      text-align: center;   
-      width: 5%;
-      margin-left: 0px;
-      
-    }
-    .cleanlink{
-      color: #000000;
-      text-decoration:none;
-      font-size:small;;
-    }
+    <style>
+  .flowchart-container {
+    width: 100vw;
+    max-width: 1200px;;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 3rem 0; 
+    padding: 0 2rem;
+    box-sizing: border-box;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  .flowchart-container svg {
+    width: 100%;
+    min-width: 1100px; 
+    max-width: 1200px; 
+    
+    display: block;
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #000000; /* Made slightly thicker for the bigger scale */
+    border-radius: 8px; /* Optional: adds nice rounded corners */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Adds a subtle depth */
+    padding: 15px 20px; /* 15px top/bottom, 20px left/right for wider breathing room */
+    line-height: 1.4; /* Spaces out the lines of text so they aren't vertically squished */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .cleanlink {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .cleanlink:hover {
+    text-decoration: underline;
+  }
+
+  .flowchart-line {
+    stroke: var(--body-color); /* Changes to white in dark mode, black in light mode */
+    stroke-width: 2;
+    stroke-dasharray: 8,8;
+  }
 </style>
+
 <h3 style="text-align: center;">Hyperlinked Diagram</h3>
 
+<div class="flowchart-container">
+<svg viewBox="0 0 1200 1100" width="100%" height="auto">
+  
+  <line x1="250" y1="100" x2="350" y2="100" class="flowchart-line" />
+  
+  <line x1="550" y1="100" x2="650" y2="175" class="flowchart-line" />
+  
+  <line x1="550" y1="250" x2="650" y2="175" class="flowchart-line" />
 
-<div>
-    <div class="spacer"><p></p></div>
-  <div class="box">
-    <a class="cleanlink" href="#MathematicalFoundationsandAnalysisMATH11121">Mathematical Foundations <br> and Analysis</a>
-  </div>
-    <div class="spacer" style="border-bottom: black dashed;width: 35%; transform: translateY(-40%);"><p><h1></h1></p></div>
-    <div class="box">
-    <a class = "cleanlink" href="#RealAnalysisMATH11112"><div style="transform: translateY(0%);"></div><br>Real Analysis <br>&nbsp;</div></a>
-  </div>
+  <line x1="550" y1="250" x2="600" y2="250" class="flowchart-line" />
+  <line x1="600" y1="250" x2="600" y2="725" class="flowchart-line" />
+  <line x1="600" y1="725" x2="650" y2="725" class="flowchart-line" />
+  
+  <line x1="850" y1="175" x2="950" y2="290" class="flowchart-line" />
+
+  <line x1="250" y1="400" x2="350" y2="400" class="flowchart-line" />
+
+  <line x1="550" y1="400" x2="950" y2="290" class="flowchart-line" />
+
+  <line x1="550" y1="400" x2="850" y2="400" class="flowchart-line" />
+  <line x1="850" y1="400" x2="950" y2="500" class="flowchart-line" />
+
+  <line x1="550" y1="400" x2="650" y2="500" class="flowchart-line" />
+
+
+  <line x1="250" y1="800" x2="350" y2="650" class="flowchart-line" />
+  
+  <line x1="250" y1="800" x2="650" y2="950" class="flowchart-line" />
+
+  <line x1="550" y1="650" x2="650" y2="725" class="flowchart-line"  />
+
+  <line x1="550" y1="650" x2="600" y2="800" class="flowchart-line" />
+  <line x1="600" y1="800" x2="950" y2="800" class="flowchart-line" />
+
+  <line x1="850" y1="725" x2="950" y2="800" class="flowchart-line" />
+
+  <line x1="850" y1="950" x2="950" y2="800" class="flowchart-line" />
+
+  <line x1="850" y1="950" x2="950" y2="950" class="flowchart-line" />
+
+<line x1="850" y1="500" x2="950" y2="500" class="flowchart-line" />
+
+  <foreignObject x="50" y="50" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#MathematicalFoundationsandAnalysisMATH11121">Mathematical Foundations <br> & Analysis</a></div>
+  </foreignObject>
+
+  <foreignObject x="50" y="350" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#IntroductiontoVectorCalculusMATH11411">Vector Calculus</a></div>
+  </foreignObject>
+
+  <foreignObject x="50" y="750" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#Probability1MATH11711">Probability 1</a></div>
+  </foreignObject>
+
+
+  <foreignObject x="350" y="50" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#RealAnalysisMATH11112">Real Analysis</a></div>
+  </foreignObject>
+
+  <foreignObject x="350" y="200" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#LinearAlgebraMATH11022">Linear Algebra</a></div>
+  </foreignObject>
+
+  <foreignObject x="350" y="350" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#OrdinaryDifferentialEquationsMATH11422">Ordinary Differential<br>Equations (ODE)</a></div>
+  </foreignObject>
+
+  <foreignObject x="350" y="600" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#Statistics1MATH11712">Statistics 1</a></div>
+  </foreignObject>
+
+
+  <foreignObject x="650" y="125" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#NumericalAnalysisMATH24411">Numerical Analysis</a></div>
+  </foreignObject>
+
+  <foreignObject x="650" y="450" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#PrinciplesOfMathematicalModelingMATH20521">Mathematical Modeling</a></div>
+  </foreignObject>
+
+  <foreignObject x="650" y="675" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#LinearRegressionModelsMATH27711">Linear Regression<br>Models </a></div>
+  </foreignObject>
+
+  <foreignObject x="650" y="900" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#Probability2MATH2770">Probability 2</a></div>
+  </foreignObject>
+
+
+  <foreignObject x="950" y="240" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#PartialDifferentialEquationsMATH24420">Partial Differential<br>Equations</a></div>
+  </foreignObject>
+
+  <foreignObject x="950" y="450" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#FluidMechanicsMATH24412">Fluid Mechanics</a></div>
+  </foreignObject>
+
+  <foreignObject x="950" y="750" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#Statistics2MATH27720">Statistics 2</a></div>
+  </foreignObject>
+
+  <foreignObject x="950" y="900" width="200" height="100">
+    <div class="box"><a class="cleanlink" href="#StochasticProcessesMATH27712">Stochastic Processes</a></div>
+  </foreignObject>
+
+</svg>
 </div>
-
-<div>
-    <div class="spacer"><p></p></div>
-  <div class="box">
-    <a class="cleanlink" href="#Probability1MATH11711"><br>Probability 1 <br>&nbsp;</a>
-  </div>
-    <div class="spacer" style="border-bottom: black dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-    <div class="box">
-   <a class="cleanlink" href="#Statistics1MATH11712"><div><br>Statistics 1 <br>&nbsp;</div></a>
-  </div>
-  <div class="spacer" style="border-bottom: transparent dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-</div>
-
-<div>
-    <div class="spacer"><p></p></div>
-  <div class="box">
-    <a class="cleanlink" href="#IntroductiontoVectorCalculusMATH11411"><div style="transform: translateY(15%);"> Introduction to Vector Calculus <br>&nbsp;</div></a>
-  </div>
-    <div class="spacer" style="border-bottom: black dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-    <div class="box">
-   <a class="cleanlink" href="#OrdinaryDifferentialEquationsMATH11422"><div style="transform: translateY(15%);">Ordinary Differential Equations <br>&nbsp;</div></a>
-  </div>
-  <div class="spacer" style="border-bottom: transparent dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-</div>
-
-<div>
-    <div class="spacer"><p></p></div>
-  <div class="box" style="background-color: transparent;border: transparent;">
-    <div></div>
-  </div>
-    <div class="spacer" style="border-bottom: transparent dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-    <div class="box">
-   <a class="cleanlink" href="#LinearAlgebraMATH11022"><div><br>Linear Algebra <br>&nbsp;</div></a>
-  </div>
-  <div class="spacer" style="border-bottom: transparent dashed;width: 5%; transform: translateY(-40%);"><p><h1></h1></p></div>
-</div>
-
 
 <h3>Hyperlinked Contents</h3>
           <p class="toc"><ul id="home_page_list" class="first_order_list">
@@ -149,7 +238,14 @@
             <li><a class="cleanlink"href="#IntroductiontoVectorCalculusMATH11411"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Introduction to Vector Calculus 11411</span></a></li>
             <li><a class="cleanlink"href="#OrdinaryDifferentialEquationsMATH11422"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Ordinary Differential Equations MATH11422</span></a></li>
             <li><a class="cleanlink"href="#LinearAlgebraMATH11022"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Linear Algebra MATH11022</span></a></li>
-
+            <li><a class="cleanlink"href="#NumericalAnalysisMATH24411"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Numerical Analysis MATH24411</span></a></li>
+            <li><a class="cleanlink"href="#FluidMechanicsMATH24412"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Fluid Mechanics MATH24412</span></a></li>
+            <li><a class="cleanlink"href="#PrinciplesOfMathematicalModelingMATH20521"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Principles of Mathematical Modeling MATH20521</span></a></li>
+            <li><a class="cleanlink"href="#PartialDifferentialEquationsMATH24420"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Partial Differential Equations MATH24420</span></a></li>
+            <li><a class="cleanlink"href="#LinearRegressionModelsMATH27711"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Linear Regression Models MATH27711</span></a></li>
+            <li><a class="cleanlink"href="#Probability2MATH2770"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Probability 2 MATH27720</span></a></li>
+            <li><a class="cleanlink"href="#Statistics2MATH27720"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Statistics 2 MATH27720</span></a></li>
+            <li><a class="cleanlink"href="#StochasticProcessesMATH27712"style="font-size: medium;"><span style="color: rgb(0, 0, 0);">Stochastic Processes MATH27712</span></a></li>
           </ul>
           </p>
 
@@ -191,7 +287,7 @@ $$R_{n,a}(f(x))=\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$$<br>
 Reimann Integrals:<br>
 <div><p style="text-align: left;">
 $$\small \lim_{n\to \infty}L(\mathcal{P_n},f)\leq \underline{\int_a^b} f(x) \ dx  \leq \overline{\int_a^b} f(x) \ dx \leq \lim_{n\to \infty}U(\mathcal{P_n},f)$$<br>
-
+</p></div>
 
 <h3>Probability 1 MATH11711</h3>      
         <p id="Probability1MATH11711"></p>
@@ -233,14 +329,105 @@ $$\iint_S \text{curl } \underline{v} \cdot  \underline{n} \ \text{d}S = \oint_C 
 <p>
 This was one of my favourite courses in first year.
 This course differs from Introduction to Vector Calculus, in that it is in two parts the first part differs, rather than focusing on key theorems in three dimensions, we used the calculus skills we learnt previous to complete our capabilities of analytical solutions in the calculus. This part of the course covered homogeneous, autonomous ODEs linear second order ODEs, Lotka-Volterra systems. We also studied numerical ideas, Euler’s method and MATLAB programming, as well as graphical solutions using phase planes, isolines, direction fields and integral curves. In the second phase of the course, we studied physical applications of ODEs these included, rectilinear motion, potential wells, circular motion, springs, rates of chemical reaction and epidemics.
-<em><br>Note most of this course was methods so no key theorems or ideas can be displayed.</em>
 </p>
 
 <h3>Linear Algebra MATH11022</h3>      
         <p id="LinearAlgebraMATH11022"></p>
 <p>
 Linear Algebra
-The linear algebra course proved lots of key concepts and formalised lots of ideas. This course included: Reduced Row Echelon Form, Gaussian elimination, LU decomposition, vector spaces, subspaces, linear transformations, Euclidean and Hermitian inner products, inner product spaces, conjugate transpose, eigenvalues and eigenvectors, diagonalisation, singular value decomposition, the spectral theorem, and the rank nullity theorem. This course proved lots of ideas I had learnt in my WolframU Linear Algebra course in 2023.<em><br>Note most of this course was methods so no key theorems or ideas can be displayed.</em>
+The linear algebra course proved lots of key concepts and formalised lots of ideas. This course included: Reduced Row Echelon Form, Gaussian elimination, LU decomposition, vector spaces, subspaces, linear transformations, Euclidean and Hermitian inner products, inner product spaces, conjugate transpose, eigenvalues and eigenvectors, diagonalisation, singular value decomposition, the spectral theorem, and the rank nullity theorem. This course proved lots of ideas I had learnt in my WolframU Linear Algebra course in 2023.</p>
+
+<h3>Numerical Analysis MATH24411</h3>      
+        <p id="NumericalAnalysisMATH24411"></p>
+<p>
+This course heavily applied the taylor series. We analysed errors, like the Runge phenomena and Newtons divided errors. This introduced, to a lower level, the ‘floating point error’. We visualised through computer programming (in MATLAB), the effects of Chebyshev points and its relation to Runge phenomena. We also implemented scripts to run simple trapezium models and Simpson's rule, building these computational models up to use matrix algebra. The last part of the course relied heavily on linear algebra knowledge; we used finite centered differences to approximate simple ODEs. This would later be built on by the Partial Differential Equations course in the next semester.
+<br>Above I have complained about the ‘lower level’ of the ‘floating point error’. Even though the course is aimed at mathematicians and not computer scientists I felt that a deeper intuition was necessary to understand the idea of these errors. The course made an analogy using significant figures. Previously in A-Level Computer Science, I have studied these errors and the different methods of storing numbers in binary. I remember fighting them when developing my graphical calculator software for my A-Level project. I think an improvement would be to replace the analogy of significant figures and to instead simplify the idea to a strictly positive domain of unsigned binary (1’s complement) of different precision numbers. Students will then be able to see the effect of balancing accuracy and bit capacity. Many mathematicians view the idea of base 2 as completely foreign. Some of them don’t start counting from 0!
+<br>Overall, I enjoyed this module and further reading around it. I am excited to progress on to Numerical Analysis 2. Some of the topics I have read more of are the Chebyshev Points and Runge phenomena.
+<br>
+Algorithm for calculating to Chebshev series: <em> from here: <a href="https://people.maths.ox.ac.uk/trefethen/8all.pdf">link</a></em>
+<br><br>
+<i>ALGORITHM FOR CHEBYSHEV DIFFERENTIATION</i>
+<ol>
+    <li> Given data $\{v_j\}$ defined at the Chebyshev points, $\{x_j\}$, 0 $\leq j \leq N$, think of the same data as being defined at the equally spaced points $\{\theta_j\}$ in $[0,\pi]$</li>
+    <li> (FFT) Find the coefficents $\{a_n\}$ of the trigonometric polynomial $$q(\theta)=\sum^{N}_{n=0}a_n\cos n\theta$$</li>
+    <li> (FFT) Compute the derivative $$\frac{dq}{d\theta}=-\sum^{N}_{n=0}na_n\sin n\theta.$$</li>
+    <li> Change of variables to obtain the derivative with respect to x:
+    $$\frac{dq}{dx}=\frac{dq}{d\theta}\frac{d\theta}{dx}=\sum^{N}_{n=0}\frac{na_n\sin n\theta}{\sin \theta}=\sum^{N}_{n=0}\frac{na_n\sin n\theta}{\sqrt{1-x^2}}$$
+    At $x=\pm1$, i.e. $\theta=0,\pi$, L'Hospital's rule gives the special values
+    $$\frac{dq}{dx}(\pm1)=\sum^N_{n=0}(\pm1)^nn^2a_n$$</li>
+    <li> Evaluate the result at the Chebyshev points:
+    $$w_j=\frac{dq}{dx}\{x_j\}$$ </li>
+</ol>
+</p>
+
+<h3>Fluid Mechanics MATH24412</h3>      
+        <p id="FluidMechanicsMATH24412"></p>
+<p>
+During the fluid mechanics course, we studied visualisation of flows using streamlines, particle paths and streaklines. We also looked at a set of ‘governing equations’ which was defined as the continuity equation (defined on the material derivative), hydrostatic equilibrium, and Euler's equation of motion. I enjoyed the course since we got to apply these formulas to real world situations. An example of this could be analysing the flow of fluid through a pipe using Bernoulli's equation. This course applied some simple ODEs that we learnt about in the semester before. I believe the next course, Viscous Fluid Mechanics will rely on material taught in the partial differential equations course. My favorite example from this course was applying Blasius Theorem to the lift on the wing of an aircraft. 
+<br>
+<br>
+Bernoullis equation:
+$$\frac{1}{2}|u|^2+\Omega+\int \frac{dp}{\rho}=\text{const}$$
+Blasius' Theorem:
+Calculates the complex force (X-$i$Y) on a closed body C.
+$$X-iY=\frac{i\rho}{2}\oint_C\left( \frac{dw}{dz} \right)^2 dz$$
+
+<h3>Principles of Mathematical Modeling MATH20521</h3>      
+        <p id="PrinciplesOfMathematicalModelingMATH20521"></p>
+<p>
+In this course we studied Dimensional Analysis, Conservation Equations, Asymptotic Analysis and Stability. In this course I enjoyed learning about Dimensional Analysis. This was interesting to see how it could be applied to my group project, which was analysing dimensional analysis of the trinity test and looking at how similar techniques can be applied to the Beirut Explosion. I had seen earlier simplified applications of dimensional analysis within my A-Level Physics and my A-Level Further Mathematics courses. In this Mathematical Modeling course I found the most enjoyable part deriving the Conservation equations. These were applied later in the Fluid Mechanics course. 
+<br>
+I opted to take this module instead of programming with python module. I do not regret this; even though I am confident that my python ability strongly beats my skill with respect to this module. I believe I should study the courses that will help me most and not search for maximisation of points.
+
+<h3>Partial Differential Equations MATH24420</h3>      
+        <p id="PartialDifferentialEquationsMATH24420"></p>
+<p>
+This course was split into two sections. Vector Calculus and Partial Differential Equations.
+The vector calculus section was similar to the vector calculus module taught in my first year of study. This built on the various ideas up to introducing the Fourier Series. We looked at the standard div, grad and curl and continued into curvilinear coordinate systems and computing and drawing the Fourier Series approximation. The second part of this course solved PDEs using the method of characteristics and the method of transformation. Finally we linked different types of numerical solutions. This is where Numerical Analysis is linked with the course, we used forward, backward and centered finite different models. It was rewarding to see the application come through from Numerical Analysis and Linear Algebra into an applied course.
+In total I found this course one of the most challenging, however one of the most rewarding to study.
+<br>
+The heat equation, a commonly used example in the course
+$$\frac{du}{dt}=-\kappa \frac{d^2u}{dx^2}$$
+
+<h3>Linear Regression Models MATH27711</h3>      
+        <p id="LinearRegressionModelsMATH27711"></p>
+<p>
+
+I enjoyed how this course combined Statistics 1 and Linear Algebra, for example we looked at multivariate normal distributions. This course was taught by a brilliant lecturer who was engaging and showed his passion for the subject. I enjoyed the parts of the course that were taught using R language. I found the coursework, which was programming a R notepad for a certain statistical event very useful in developing my skills in R. An interesting topic from the course was using R to discuss the best models to fit our data. I thought it was interesting how under and over fitting regression models worked, and how a more simple model can be the best option.
+
+The multivariate normal distribution <br>
+
+$$f(\mathbf{z})=\frac{1}{(2\pi )^{\frac{n}{2}}\sqrt{\det(\mathbf{V})}\exp{-\frac{1}{2}(\mathbf{z-\mu})^T\mathbf{V}^{-1}(\mathbf{z-\mu})}}$$
+</p>
+
+<h3>Probability 2 MATH27720</h3>      
+        <p id="Probability2MATH2770"></p>
+<p>
+
+I enjoyed how Probability 2 was a gentle step up from Probability 1. The lectures were taught very well. Within the course we recapped simple random variables and progressed onto multivariate random variables that were defined discretely and continuously. There is a perhaps surprising link to Vector Calculus and further to Statistical Mechanics which can be seen as we apply similar methods to solve mechanical problems using integral techniques. We see these calculations later in the courses focusing on Quantum Mechanics. This course introduced powerful tools like the probability generating function and the moment generating function. 
+This course was taught under the same code as Statistics 2, where it was assessed as one exam alongside Statistics 2, in the semester 2 exam period. I do not understand why the Mathematics department decided this; Probability 2 and Statistics 2 did not have significant overlap. 
+I enjoyed this module and might take similar follow-on modules next year.
+<br>
+$$P_X(t)=\mathbb{E}[t^X]=\sum^{\infty}_{k=0}t^k\mathbb{P}(X=k)$$
+
+Moment Generating Function
+$$M_X(t)=\mathbb{E}[{e^{tX}}]$$
+
+</p>
+
+<h3>Statistics 2 MATH27720</h3>      
+        <p id="Statistics2MATH27720"></p>
+<p>
+
+This course was split into three sections: ‘Models’, ‘Information and Likelihood’ and ‘Bayesian Statistics’. A common theme from the module was comparing the ideas of frequentists and Bayesians. The professor released an electronic book for this module, which can be accessed <a href="https://strimmerlab.github.io/publications/lecture-notes/MATH27720-stats2/">here</a>. This course was linked to Linear Regression Modules as we analysed techniques for model building. I feel the lecture notes are brilliant for the module; they are very informative.
+
+</p>
+
+<h3>Stochastic Processes MATH27712</h3>      
+        <p id="StochasticProcessesMATH27712"></p>
+<p>
+
+In this course, we studied simple stochastic processes, like the Bernoulli Process and built this up into more complicated processes like the simple random walk, Poisson Process and standard Brownian Motion. We focused on solving problems like the Gambler’s ruin problem, Sainsbury’s ruin problem and the Investor’s ruin problem. I enjoyed the way that this course was taught. We also analysed infinitesimal operators and their connection to the Dirichlet problems with respect to these processes. This was one of my favourite modules since I enjoyed both the material and the enthusiasm of the lecturer.
 </p>
 
       <!--
