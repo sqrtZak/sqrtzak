@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Logo.png">
+    <title>National Rocketry Championship</title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="latex.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head></title>
+
+      <!--
+        Linking latex css style sheet.
+      -->
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+      <!--
+        Boiler Plate for MathJax
+      -->
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+      </script>    
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+  </head>
+
+<body id="Body_of_doc">
+    <div>
+        <h2>
+            National Rocketry Championship
+        </h2>
+        <p id="Test">
+            In June 2026, I participated with my team from the University of Manchester competing in the National Rocketry Championship. In this event, we competed against 40 teams from other universities. My contribution to the team was in electronics. We developed a small rocket containing our custom electronics payload and a predefined customer's payload. Our electronics included a camera and GPS positioning; we saved all of this data onto an onboard microSD card. My team's calculations were exceptional. Our apogee was 2,192 ft, very close to the 2,200 ft target. Our stability was also very good. We saw lots of other teams suffering from over-stabilisation. This won us an award from Airbus for the most accurate rocket. I am very grateful to the team for their outstanding efforts.     </p>
+            <br>
+          I am very grateful to the team for their outstanding efforts.
+        </p>
+            <label for="sn-anything" class="sidenote-toggle">⊕</label>
+    <input type="checkbox" id="sn-anything" class="sidenote-toggle" />
+    <span class="sidenote">© Zak Powles, CC BY-NC-ND <a href="LATEX_CSS_Licence.txt">Licence</a></span>
+        <script>
+            window.onload = heights()
+            height=0
+            width=0
+            function heights(){
+            const elmnt = document.getElementById("Body_of_doc");
+            let height = elmnt.offsetHeight;
+            let width = elmnt.offsetWidth;
+            console.log(height)
+            console.log(width)
+
+            //declare var names and place into local storage.
+            title_str=document.title.replace(/\s/g, '');
+            localStorage.setItem((title_str+"height"), height)
+            localStorage.setItem((title_str+"width"), width)
+            
+            }
+            </script>
+    </div>
+</body>
